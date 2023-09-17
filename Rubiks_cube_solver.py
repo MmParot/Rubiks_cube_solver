@@ -12,7 +12,28 @@
 import random
 #this is the section where all the variables are set
 
-Notation = ["l", "r", "d", "u", "l'", "r'", "d'", "u'", "s", "m", "e", "s'", "m'", "e'"]
-blue = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+time = 15
 
-#This is the code seccction
+Notation = ["U", "D", "L", "R", "U'", "D'", "L'", "R'", "U2", "D2", "L2", "R2", "U2'", "D2'", "L2'", "R2'"]
+
+white = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
+yellow = ["1", "1", "1", "1", "1", "1", "1", "1", "1"]
+blue = ["2", "2", "2", "2", "2", "2", "2", "2", "2"]
+green = ["3", "3", "3", "3", "3", "3", "3", "3", "3"]
+red = ["4", "4", "4", "4", "4", "4", "4", "4", "4"]
+orange = ["5", "5", "5", "5", "5", "5", "5", "5", "5"]
+
+scramble = []
+
+#This is the code section
+def scramble_notation(time,scramble):
+    while  time >0:
+        t = random.choice(Notation)
+        scramble.append(t)
+#       print(time)
+        time = time - 1
+    print(scramble)
+    
+scramble_notation(time = 15,scramble = [],  )h
+    
+    
