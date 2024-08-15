@@ -12,7 +12,7 @@
 import random
 #this is the section where all the variables are set
 
-time = 15
+time = int(input("how many move scramble would you like?   "))
 
 Notation = ["U", "D", "L", "R", "U'", "D'", "L'", "R'", "U2", "D2", "L2", "R2", "U2'", "D2'", "L2'", "R2'"]
 
@@ -34,6 +34,6 @@ def scramble_notation(time,scramble):
         time = time - 1
     print(scramble)
     
-scramble_notation(time = 15,scramble = [],  )h
+scramble_notation(time, scramble = [],  )
     
     
