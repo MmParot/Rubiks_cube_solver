@@ -30,11 +30,14 @@ Scramble_check_time = 0
 def scramble_notation(time,scramble):
     while  time >0:
         add = random.choice(Notation)
-        for add in Notation:
-            
-            scramble.append(add)
-    #       print(time)
-            time = time - 1
+        scramble.append(add)
+        print(time)
+        time = time - 1
     print(scramble)
     
 scramble_notation(time, scramble = [],  )
+
+
+# This section is to test The Function of Checking list To see if the Next scramble Move is equal to the last
+def Check_for_doubles(scramble):
+    Print("Test")
